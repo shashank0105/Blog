@@ -1,0 +1,27 @@
+<h1>Listing yourviews</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Post</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @yourviews.each do |yourview| %>
+      <tr>
+        <td><%= yourview.post_id %></td>
+        <td><%= yourview.body %></td>
+        <td><%= link_to 'Show', yourview %></td>
+        <td><%= link_to 'Edit', edit_yourview_path(yourview) %></td>
+        <td><%= link_to 'Destroy', yourview, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Yourview', new_yourview_path %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Post:</strong>
+  <%= @yourview.post_id %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @yourview.body %>
+</p>
+
+<%= link_to 'Edit', edit_yourview_path(@yourview) %> |
+<%= link_to 'Back', yourviews_path %>
