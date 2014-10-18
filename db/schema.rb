@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20141018152154) do
+=======
+ActiveRecord::Schema.define(version: 20141017105208) do
+>>>>>>> 8d36c7b124e85e35b34a20759d6f392241cfcb51
 
   create_table "articles", force: true do |t|
     t.string   "title"
@@ -21,7 +25,11 @@ ActiveRecord::Schema.define(version: 20141018152154) do
   end
 
   create_table "yourviews", force: true do |t|
+<<<<<<< HEAD
     t.integer  "article_id"
+=======
+    t.integer  "post_id"
+>>>>>>> 8d36c7b124e85e35b34a20759d6f392241cfcb51
     t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"

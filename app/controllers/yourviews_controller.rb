@@ -69,6 +69,10 @@ class YourviewsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def yourview_params
+<<<<<<< HEAD
       params.require(:yourview).permit(:article_id, :body)
+=======
+      params.require(:yourview).permit(:post_id, :body)
+>>>>>>> 8d36c7b124e85e35b34a20759d6f392241cfcb51
     end
 end

@@ -1,9 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+<<<<<<< HEAD
   article_id: 1
   body: MyText
 
 two:
   article_id: 1
+=======
+  post_id: 1
+  body: MyText
+
+two:
+  post_id: 1
+>>>>>>> 8d36c7b124e85e35b34a20759d6f392241cfcb51
   body: MyText
